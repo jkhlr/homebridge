@@ -1,0 +1,57 @@
+{
+  "accessories": [
+    {
+      "accessory": "HTTP-SWITCH",
+      "name": "Logitech Speakers",
+      "onUrl": "http://localhost:8000/on?delay=3000",
+      "offUrl": "http://localhost:8000/off",
+      "statusUrl": "http://localhost:8000/status",
+      "statusPattern": "{\"status\":\"on\"}"
+    },
+    {
+      "accessory": "HTTP-SWITCH",
+      "name": "Spotify GutenMorgen",
+      "switchType": "toggle",
+      "onUrl": "http://localhost:8080/spotify/playlist/?device_name=Bett&playlist_name=GutenMorgen&shuffle=1",
+      "offUrl": "http://localhost:8080/spotify/pause/?device_name=Bett"
+    },
+    {
+      "accessory": "HTTP-RGB",
+      "name": "Couch Ecke",
+      "service": "Light",
+      "switch": {
+        "status": "http://localhost:4999/devices/couch/status",
+        "powerOn": "http://localhost:4999/devices/couch/powerOn",
+        "powerOff": "http://localhost:4999/devices/couch/powerOff"
+      }
+    },
+    {
+      "accessory": "HTTP-RGB",
+      "name": "LED 1",
+      "service": "Light",
+      "switch": {
+        "status": "http://localhost:4999/devices/led1/status",
+        "powerOn": "http://localhost:4999/devices/led1/powerOn",
+        "powerOff": "http://localhost:4999/devices/led1/powerOff"
+      },
+      "color": {
+        "status": "http://localhost:4999/devices/led1/color",
+        "url": "http://localhost:4999/devices/led1/color/%s"
+      }
+    },
+    {
+      "accessory": "HTTP-RGB",
+      "name": "LED 2",
+      "service": "Light",
+      "switch": {
+        "status": "http://localhost:4999/devices/led2/status",
+        "powerOn": "http://localhost:4999/devices/led2/powerOn",
+        "powerOff": "http://localhost:4999/devices/led2/powerOff"
+      },
+      "color": {
+        "status": "http://localhost:4999/devices/led2/color",
+        "url": "http://localhost:4999/devices/led2/color/%s"
+      }
+    }
+  ]
+}
