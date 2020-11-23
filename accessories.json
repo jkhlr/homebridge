@@ -27,7 +27,7 @@
     },
     {
       "accessory": "HTTP-RGB",
-      "name": "LED 1",
+      "name": "Küche",
       "service": "Light",
       "switch": {
         "status": "http://localhost:4999/devices/led1/status",
@@ -41,7 +41,7 @@
     },
     {
       "accessory": "HTTP-RGB",
-      "name": "LED 2",
+      "name": "Jona",
       "service": "Light",
       "switch": {
         "status": "http://localhost:4999/devices/led2/status",
@@ -52,6 +52,34 @@
         "status": "http://localhost:4999/devices/led2/color",
         "url": "http://localhost:4999/devices/led2/color/%s"
       }
+    },
+    {
+      "accessory": "HTTP-HUMIDITY",
+      "name": "Jona",
+      "getUrl": "http://raspi-jona.fritz.box:8000/humidity",
+      "pullInterval": 30000,
+      "statusPattern": "{\"humidity\":(-?[0-9]{1,3}(.[0-9]))[0-9]*}"
+    },
+    {
+      "accessory": "HTTP-TEMPERATURE",
+      "name": "Jona",
+      "getUrl": "http://raspi-jona.fritz.box:8000/temperature",
+      "pullInterval": 30000,
+      "statusPattern": "{\"temperature\":(-?[0-9]{1,3}(.[0-9]))[0-9]*}"
+    },
+    {
+      "accessory": "HTTP-HUMIDITY",
+      "name": "Jakob",
+      "getUrl": "http://localhost:8001/humidity",
+      "pullInterval": 30000,
+      "statusPattern": "{\"humidity\":(-?[0-9]{1,3}(.[0-9]))[0-9]*}"
+    },
+    {
+      "accessory": "HTTP-TEMPERATURE",
+      "name": "Jakob",
+      "getUrl": "http://localhost:8001/temperature",
+      "pullInterval": 30000,
+      "statusPattern": "{\"temperature\":(-?[0-9]{1,3}(.[0-9]))[0-9]*}"
     }
   ]
 }

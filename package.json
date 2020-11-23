@@ -4,6 +4,8 @@
   "dependencies": {
     "homebridge-dummy": "^0.4.0",
     "homebridge-better-http-rgb": "^2.0.0",
-    "homebridge-http-switch": "^0.5.31"
+    "homebridge-http-switch": "^0.5.31",
+    "homebridge-http-humidity-sensor": "^1.0.6",
+    "homebridge-http-temperature-sensor": "^1.0.9"
   }
 }
