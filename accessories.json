@@ -1,19 +1,16 @@
 {
   "accessories": [
     {
-      "accessory": "HTTP-SWITCH",
+      "accessory": "HTTP-OUTLET",
       "name": "Logitech Speakers",
       "onUrl": "http://localhost:8000/on?delay=3000",
       "offUrl": "http://localhost:8000/off",
       "statusUrl": "http://localhost:8000/status",
-      "statusPattern": "{\"status\":\"on\"}"
-    },
-    {
-      "accessory": "HTTP-SWITCH",
-      "name": "Spotify GutenMorgen",
-      "switchType": "toggle",
-      "onUrl": "http://localhost:8080/spotify/playlist/?device_name=Bett&playlist_name=GutenMorgen&shuffle=1",
-      "offUrl": "http://localhost:8080/spotify/pause/?device_name=Bett"
+      "statusPattern": "{\"status\":\"on\"}",
+      "outletInUse": {
+        "statusUrl": "http://localhost:8000/status",
+        "statusPattern": "{\"status\":\"on\"}"
+      }
     },
     {
       "accessory": "HTTP-RGB",
