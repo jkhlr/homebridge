@@ -6,6 +6,7 @@
     "homebridge-better-http-rgb": "^2.0.0",
     "homebridge-http-outlet": "^1.0.7",
     "homebridge-http-humidity-sensor": "^1.0.6",
-    "homebridge-http-temperature-sensor": "^1.0.9"
+    "homebridge-http-temperature-sensor": "^1.0.9",
+    "homebridge-fakebulb": "^0.0.3"
   }
 }

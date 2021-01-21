@@ -3,7 +3,7 @@
     {
       "accessory": "HTTP-OUTLET",
       "name": "Logitech Speakers",
-      "onUrl": "http://localhost:8000/on?delay=3000",
+      "onUrl": "http://localhost:8000/on?delay=5000",
       "offUrl": "http://localhost:8000/off",
       "statusUrl": "http://localhost:8000/status",
       "statusPattern": "{\"status\":\"on\"}",
@@ -24,7 +24,7 @@
     },
     {
       "accessory": "HTTP-RGB",
-      "name": "Küche",
+      "name": "Jona",
       "service": "Light",
       "switch": {
         "status": "http://localhost:4999/devices/led1/status",
@@ -34,20 +34,6 @@
       "color": {
         "status": "http://localhost:4999/devices/led1/color",
         "url": "http://localhost:4999/devices/led1/color/%s"
-      }
-    },
-    {
-      "accessory": "HTTP-RGB",
-      "name": "Jona",
-      "service": "Light",
-      "switch": {
-        "status": "http://localhost:4999/devices/led2/status",
-        "powerOn": "http://localhost:4999/devices/led2/powerOn",
-        "powerOff": "http://localhost:4999/devices/led2/powerOff"
-      },
-      "color": {
-        "status": "http://localhost:4999/devices/led2/color",
-        "url": "http://localhost:4999/devices/led2/color/%s"
       }
     },
     {
